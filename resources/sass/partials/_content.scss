@@ -30,6 +30,7 @@ main {
 
         .comic {
           width: calc(100% / 6 - 20px);
+          cursor: pointer;
 
           .comic-cover {
             width: 100%;
@@ -75,6 +76,7 @@ main {
             @include a-style($white);
             display: flex;
             align-items: center;
+            text-transform: uppercase;
 
             img {
               height: 55px;

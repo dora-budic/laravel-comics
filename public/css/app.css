@@ -87,11 +87,19 @@ header .navbar ul li.active a {
   color: #0282F9;
 }
 
+header .navbar ul li:hover {
+  border-bottom: 5px solid #0282F9;
+}
+
+header .navbar ul li:hover a {
+  color: #0282F9;
+}
+
 header .navbar ul li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #464C52;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 header .navbar ul li a i {
@@ -174,6 +182,7 @@ main #comics-list .comics .comics-container {
 
 main #comics-list .comics .comics-container .comic {
   width: calc(100% / 6 - 20px);
+  cursor: pointer;
 }
 
 main #comics-list .comics .comics-container .comic .comic-cover {
@@ -197,12 +206,12 @@ main #comics-list .comics .comics-container .comic p {
 
 main #comics-list .comics > a.load {
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
   background-color: #0282F9;
   padding: 5px 50px;
   font-size: 14px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 main #services {
@@ -226,10 +235,10 @@ main #services div ul {
 
 main #services div ul li a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 main #services div ul li a img {
@@ -239,5 +248,103 @@ main #services div ul li a img {
 
 main #services div ul li:last-child img {
   height: 35px;
+}
+
+footer .links-container {
+  background-image: url("/img/footer-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .links-container .links {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/img/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+footer .links-container .links .links-lists {
+  display: flex;
+}
+
+footer .links-container .links .links-lists .list {
+  margin-right: 20px;
+}
+
+footer .links-container .links .links-lists .list h3 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+footer .links-container .links .links-lists .list ul {
+  list-style: none;
+}
+
+footer .links-container .links .links-lists .list ul li:hover a {
+  color: #0282F9;
+}
+
+footer .links-container .links .links-lists .list ul li a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 12px;
+}
+
+footer .links-container .links p {
+  margin-top: 15px;
+  color: #959595;
+  font-size: 12px;
+}
+
+footer .links-container .links p a {
+  text-decoration: none;
+  color: #0282F9;
+}
+
+footer .copyright {
+  background-color: #303030;
+}
+
+footer .copyright > div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .copyright > div > a {
+  border: 2px solid #0282F9;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .copyright > div > a:hover {
+  background-color: #0282F9;
+}
+
+footer .copyright > div .social {
+  display: flex;
+  align-items: center;
+}
+
+footer .copyright > div .social h3 {
+  text-transform: uppercase;
+  color: #0282F9;
+}
+
+footer .copyright > div .social ul li {
+  margin-left: 20px;
 }
 

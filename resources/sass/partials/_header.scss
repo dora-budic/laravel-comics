@@ -34,7 +34,15 @@ header {
       line-height: 100px;
       li {
         margin: 0 10px;
+
         &.active {
+          border-bottom: 5px solid $primaryColor;
+          a {
+            color: $primaryColor;
+          }
+        }
+
+        &:hover {
           border-bottom: 5px solid $primaryColor;
           a {
             color: $primaryColor;
@@ -43,6 +51,8 @@ header {
         a {
           @include a-style($textColor);
           font-weight: bold;
+          text-transform: uppercase;
+
           i {
             color: $primaryColor;
             line-height: 100px;
