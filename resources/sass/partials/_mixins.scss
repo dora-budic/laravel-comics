@@ -1,0 +1,10 @@
+@mixin container-center {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin a-style($color) {
+  text-decoration: none;
+  color: $color;
+}
