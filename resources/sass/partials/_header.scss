@@ -42,7 +42,6 @@ header {
         }
         a {
           @include a-style($textColor);
-          text-transform: uppercase;
           font-weight: bold;
           i {
             color: $primaryColor;

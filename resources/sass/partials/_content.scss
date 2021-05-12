@@ -1,49 +1,92 @@
 main {
-  background-color: $mainBg;
+  #comics-list {
+    background-color: $mainBg;
 
-  .comics {
-    @include container-center;
-    position: relative;
-    padding: 20px 0;
+    .comics {
+      @include container-center;
+      position: relative;
+      padding: 20px 0;
+      text-align: center;
 
-    & > p {
-      display: inline-block;
-      background-color: $primaryColor;
-      color: $white;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 10px 20px;
-      font-size: 26px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateY(-50%);
-    }
+      & > p {
+        display: inline-block;
+        background-color: $primaryColor;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 20px;
+        font-size: 26px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+      }
 
-    .comics-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      .comics-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px;
 
-      .comic {
-        width: calc(100% / 6 - 20px);
+        .comic {
+          width: calc(100% / 6 - 20px);
 
-        .comic-cover {
-          width: 100%;
-          padding-top: 100%;
-          position: relative;
-          overflow: hidden;
-
-          img {
+          .comic-cover {
             width: 100%;
-            position: absolute;
-            top:0;
-            left: 0;
+            padding-top: 100%;
+            position: relative;
+            overflow: hidden;
+
+            img {
+              width: 100%;
+              position: absolute;
+              top:0;
+              left: 0;
+            }
+          }
+          p {
+            text-transform: uppercase;
+            color: $white;
           }
         }
-        p {
-          text-transform: uppercase;
-          color: $white;
+      }
+
+      & > a.load {
+        @include a-style($white);
+        @include btn-blue;
+      }
+    }
+  }
+
+  #services {
+    background-color: $primaryColor;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+    div {
+      @include container-center;
+      padding: 0 20px;
+      ul {
+        justify-content: space-around;
+        align-items: center;
+        li {
+          a {
+            @include a-style($white);
+            display: flex;
+            align-items: center;
+
+            img {
+              height: 55px;
+              margin-right: 10px;
+            }
+          }
+
+          &:last-child {
+            img {
+              height: 35px;
+            }
+          }
         }
       }
     }

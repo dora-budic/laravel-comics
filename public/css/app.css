@@ -89,8 +89,8 @@ header .navbar ul li.active a {
 
 header .navbar ul li a {
   text-decoration: none;
-  color: #464C52;
   text-transform: uppercase;
+  color: #464C52;
   font-weight: bold;
 }
 
@@ -138,19 +138,20 @@ header .jumbo {
   background-repeat: no-repeat;
 }
 
-main {
+main #comics-list {
   background-color: #1C1C1C;
 }
 
-main .comics {
+main #comics-list .comics {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   padding: 20px 0;
+  text-align: center;
 }
 
-main .comics > p {
+main #comics-list .comics > p {
   display: inline-block;
   background-color: #0282F9;
   color: #fff;
@@ -164,32 +165,79 @@ main .comics > p {
   transform: translateY(-50%);
 }
 
-main .comics .comics-container {
+main #comics-list .comics .comics-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
-main .comics .comics-container .comic {
+main #comics-list .comics .comics-container .comic {
   width: calc(100% / 6 - 20px);
 }
 
-main .comics .comics-container .comic .comic-cover {
+main #comics-list .comics .comics-container .comic .comic-cover {
   width: 100%;
   padding-top: 100%;
   position: relative;
   overflow: hidden;
 }
 
-main .comics .comics-container .comic .comic-cover img {
+main #comics-list .comics .comics-container .comic .comic-cover img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-main .comics .comics-container .comic p {
+main #comics-list .comics .comics-container .comic p {
   text-transform: uppercase;
   color: #fff;
+}
+
+main #comics-list .comics > a.load {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0282F9;
+  padding: 5px 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main #services {
+  background-color: #0282F9;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+main #services div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+main #services div ul {
+  justify-content: space-around;
+  align-items: center;
+}
+
+main #services div ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+main #services div ul li a img {
+  height: 55px;
+  margin-right: 10px;
+}
+
+main #services div ul li:last-child img {
+  height: 35px;
 }
 
