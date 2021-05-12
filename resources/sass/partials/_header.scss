@@ -19,7 +19,6 @@ header {
 
   .navbar {
     @include container-center;
-    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +35,7 @@ header {
       li {
         margin: 0 10px;
         &.active {
-          border-bottom: 3px solid $primaryColor;
+          border-bottom: 5px solid $primaryColor;
           a {
             color: $primaryColor;
           }
