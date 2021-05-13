@@ -41,10 +41,58 @@
     .comic-description {
       padding: 50px 0;
       display: flex;
+      justify-content: space-between;
       .text {
+        width: calc(100% / 3 * 2 - 25px);
         h1 {
           color: $titleColor;
           text-transform: uppercase;
+          font-size: 30px;
+        }
+
+        .price {
+          background-color: #55BA59;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #357739;
+          margin: 30px 0 20px;
+          p {
+            padding: 15px 25px;
+            font-weight: bold;
+            color: #bafd9c;
+            span {
+              color: $white;
+            }
+          }
+
+          div {
+            display: flex;
+            justify-content: space-between;
+            a {
+              @include a-style($white);
+              padding: 0 25px;
+              border-left: 1px solid #357739;
+              line-height: 50px;
+              i {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        p {
+          color: $pColor;
+          font-size: 17px;
+          line-height: 23px;
+        }
+      }
+
+      .advertisement {
+        h4 {
+          text-transform: uppercase;
+          color: $pColor;
+          text-align: right;
+          margin-bottom: 10px;
         }
       }
     }
