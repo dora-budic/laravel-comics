@@ -30,7 +30,7 @@ main {
 
         .comic {
           width: calc(100% / 6 - 20px);
-          cursor: pointer;
+          text-decoration: none;
 
           .comic-cover {
             width: 100%;
@@ -93,4 +93,6 @@ main {
       }
     }
   }
+
+  @import '_single.scss';
 }

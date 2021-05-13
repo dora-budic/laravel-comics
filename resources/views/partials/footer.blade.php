@@ -62,11 +62,11 @@
       <div class="social">
         <h3>Follow us</h3>
         <ul class="list-inline">
-          <li><a href="#"><img src="img/footer-facebook.png" alt="facebook logo"></a></li>
-          <li><a href="#"><img src="img/footer-twitter.png" alt="twitter logo"></a></li>
-          <li><a href="#"><img src="img/footer-youtube.png" alt="youtube logo"></a></li>
-          <li><a href="#"><img src="img/footer-pinterest.png" alt="pinterest logo"></a></li>
-          <li><a href="#"><img src="img/footer-periscope.png" alt="location icon"></a></li>
+          <li><a href="#"><img src="/img/footer-facebook.png" alt="facebook logo"></a></li>
+          <li><a href="#"><img src="/img/footer-twitter.png" alt="twitter logo"></a></li>
+          <li><a href="#"><img src="/img/footer-youtube.png" alt="youtube logo"></a></li>
+          <li><a href="#"><img src="/img/footer-pinterest.png" alt="pinterest logo"></a></li>
+          <li><a href="#"><img src="/img/footer-periscope.png" alt="location icon"></a></li>
         </ul>
       </div>
     </div>

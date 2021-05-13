@@ -1,0 +1,52 @@
+#comic-info {
+  .line {
+    background-color: $primaryColor;
+    height: 60px;
+  }
+
+  .comic-details {
+    @include container-center;
+    padding: 0 100px;
+    position: relative;
+
+    .cover {
+      position: absolute;
+      top: -310px;
+      left: 100px;
+      border: 1px solid $white;
+
+      a {
+        @include a-style($white);
+        text-transform: uppercase;
+        background-color: $primaryLight;
+
+        &.cover-top {
+          padding: 2px 5px;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &.cover-bottom {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          padding: 2px 0;
+        }
+      }
+    }
+
+    .comic-description {
+      padding: 50px 0;
+      display: flex;
+      .text {
+        h1 {
+          color: $titleColor;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

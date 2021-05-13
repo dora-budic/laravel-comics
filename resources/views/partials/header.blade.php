@@ -8,7 +8,7 @@
 
   <nav>
     <div class="navbar">
-      <a href="{{route ('home')}}"><img src="img/dc-logo.png" alt="dc logo"></a>
+      <a href="{{route ('home')}}"><img src="/img/dc-logo.png" alt="dc logo"></a>
       <ul class="list-inline">
         <li><a href="#">characters</a></li>
         <li class="active"><a href="{{route ('home')}}">comics</a></li>

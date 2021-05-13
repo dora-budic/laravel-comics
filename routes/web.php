@@ -17,3 +17,8 @@ Route::get('/', function () {
     $database = config('comics');
     return view('home')->with('comics',$database);
 })->name('home');
+
+Route::get('/single/{id}', function ($id) {
+    $comics = config('comics');
+    return view('single')->with('comic',$comics[$id]);
+})->name('details');
