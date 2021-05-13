@@ -39,7 +39,7 @@
                 <p>Art by:</p>
               </div>
               <div>
-                @foreach ($comic['artists'] as $index => $artist)
+                @foreach ($comic['artists'] as $artist)
                   @if (!($loop->last))
                     <a href="#">{{$artist}}</a><span>, </span>
                   @else
@@ -53,7 +53,7 @@
                 <p>Written by:</p>
               </div>
               <div>
-                @foreach ($comic['writers'] as $index => $writer)
+                @foreach ($comic['writers'] as $writer)
                   @if (!($loop->last))
                     <a href="#">{{$writer}}</a><span>, </span>
                   @else
