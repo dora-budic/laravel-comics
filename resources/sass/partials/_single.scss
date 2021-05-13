@@ -143,19 +143,27 @@
         }
       }
 
-      .services {
-        ul {
-          li {
-            a {
-              @include a-style(#9F9F9F);
-              display: flex;
-              text-transform: uppercase;
+    }
+  }
 
-              img {
-                height: 55px;
-                margin-right: 10px;
-              }
+  .services {
+    background-color: #9F9F9F;
+    div {
+      @include container-center;
+      padding: 0 100px;
+      ul {
+        li {
+          padding: 20px;
+          width: 25%;
+          a {
+            @include a-style($white);
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-size: 13px;
 
+            img {
+              height: 40px;
             }
           }
         }

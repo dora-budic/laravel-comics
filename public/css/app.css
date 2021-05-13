@@ -46,6 +46,15 @@ body {
   border-top: 1px solid #DCDCDC;
 }
 
+.border-x {
+  border-right: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+}
+
+.border-r {
+  border-right: 1px solid #DCDCDC;
+}
+
 header .header-top {
   background-color: #0282F9;
 }
@@ -357,15 +366,29 @@ main #comic-info .credits .credits-container .credits-info > div.specs .writer a
   color: #0282F9;
   text-transform: uppercase;
 }
-main #comic-info .credits .credits-container .services ul li a {
-  text-decoration: none;
-  color: #9F9F9F;
-  display: flex;
-  text-transform: uppercase;
+main #comic-info .services {
+  background-color: #9F9F9F;
 }
-main #comic-info .credits .credits-container .services ul li a img {
-  height: 55px;
-  margin-right: 10px;
+main #comic-info .services div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 100px;
+}
+main #comic-info .services div ul li {
+  padding: 20px;
+  width: 25%;
+}
+main #comic-info .services div ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+main #comic-info .services div ul li a img {
+  height: 40px;
 }
 
 footer .links-container {

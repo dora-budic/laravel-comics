@@ -92,14 +92,16 @@
           </div>
         </div>
 
-        <div class="services">
-          <ul class="list-inline">
-            <li><a href="#">digital comics<img src="/img/buy-comics-digital-comics.png" alt="ebook"></a></li>
-            <li><a href="#">shop dc<img src="/img/buy-comics-merchandise.png" alt="tshirt"></a></li>
-            <li><a href="#">comic shop locator<img src="/img/buy-comics-shop-locator.png" alt="location icon"></a></li>
-            <li><a href="#">subscription<img src="/img/buy-comics-subscriptions.png" alt="cards"></a></li>
-          </ul>
-        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="">
+        <ul class="list-inline">
+          <li class="border-x"><a href="#">digital comics<img src="/img/buy-comics-digital-comics.png" alt="ebook"></a></li>
+          <li class="border-r"><a href="#">shop dc<img src="/img/buy-comics-subscriptions.png" alt="cards"></a></li>
+          <li class="border-r"><a href="#">comic shop locator<img src="/img/buy-comics-shop-locator.png" alt="location icon"></a></li>
+          <li class="border-r"><a href="#">subscription<img src="/img/buy-comics-merchandise.png" alt="tshirt"></a></li>
+        </ul>
       </div>
     </div>
   </section>
