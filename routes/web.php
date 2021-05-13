@@ -20,5 +20,7 @@ Route::get('/', function () {
 
 Route::get('/single/{id}', function ($id) {
     $comics = config('comics');
-    return view('single')->with('comic',$comics[$id]);
+    $dateTime = date_create($comics[$id]['sale_date']);
+    $date = date_format($dateTime, "M d Y");
+    return view('single')->with('comic',$comics[$id])->with('date',$date);
 })->name('details');

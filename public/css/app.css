@@ -33,6 +33,19 @@ body {
   display: flex;
 }
 
+.border-y {
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.border-b {
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.border-t {
+  border-top: 1px solid #DCDCDC;
+}
+
 header .header-top {
   background-color: #0282F9;
 }
@@ -304,6 +317,44 @@ main #comic-info .comic-details .comic-description .advertisement h4 {
   color: #555555;
   text-align: right;
   margin-bottom: 10px;
+}
+main #comic-info .credits {
+  background-color: #F6F6F6;
+}
+main #comic-info .credits .credits-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #comic-info .credits .credits-container .credits-info {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+main #comic-info .credits .credits-container .credits-info > div {
+  width: calc(50% - 10px);
+}
+main #comic-info .credits .credits-container .credits-info > div h2 {
+  color: #003F63;
+  margin: 20px 0;
+}
+main #comic-info .credits .credits-container .credits-info > div > div {
+  display: flex;
+  padding: 15px 0;
+  font-size: 13px;
+}
+main #comic-info .credits .credits-container .credits-info > div > div p {
+  color: #003F63;
+  width: 150px;
+}
+main #comic-info .credits .credits-container .credits-info > div.talent a {
+  text-decoration: none;
+  color: #0282F9;
+}
+main #comic-info .credits .credits-container .credits-info > div.specs .writer a {
+  text-decoration: none;
+  color: #0282F9;
+  text-transform: uppercase;
 }
 
 footer .links-container {

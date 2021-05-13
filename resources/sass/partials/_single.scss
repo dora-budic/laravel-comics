@@ -97,4 +97,50 @@
       }
     }
   }
+  .credits {
+    background-color: $singleBg;
+
+    .credits-container {
+      @include container-center;
+
+      .credits-info {
+        padding-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        & > div {
+          width: calc(50% - 10px);
+          h2 {
+            color: $titleColor;
+            margin: 20px 0;
+          }
+
+          & > div {
+            display: flex;
+            padding: 15px 0;
+            font-size: 13px;
+            p {
+              color: $titleColor;
+              width: 150px;
+            }
+          }
+
+          &.talent {
+            a {
+              @include a-style($primaryColor);
+            }
+          }
+
+          &.specs {
+            .writer {
+              a {
+                @include a-style($primaryColor);
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
