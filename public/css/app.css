@@ -420,6 +420,30 @@ main #characters > div div p {
 main #characters > div img {
   height: 100%;
 }
+main #movies > div {
+  padding: 50px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #movies > div h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #003F63;
+  margin: 20px 0;
+}
+main #movies > div > div {
+  display: flex;
+}
+main #movies > div > div div {
+  margin-right: 30px;
+}
+main #movies > div > div div img {
+  width: 190px;
+}
+main #movies > div > div div p {
+  font-size: 18px;
+}
 
 footer .links-container {
   background-image: url("/img/footer-bg.jpg");

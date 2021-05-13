@@ -28,3 +28,7 @@ Route::get('/single/{id}', function ($id) {
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');

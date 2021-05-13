@@ -1,0 +1,26 @@
+#movies {
+  & > div {
+    padding: 50px 0;
+    @include container-center;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 30px;
+      color: $titleColor;
+      margin: 20px 0;
+    }
+
+    & > div {
+      display: flex;
+      div {
+        margin-right: 30px;
+        img {
+          width: 190px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
