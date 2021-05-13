@@ -390,6 +390,36 @@ main #comic-info .services div ul li a {
 main #comic-info .services div ul li a img {
   height: 40px;
 }
+main #characters {
+  background-color: #DCDCDC;
+}
+main #characters > div {
+  height: 400px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #characters > div div span {
+  color: #0282F9;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+main #characters > div div h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #003F63;
+  margin: 20px 0;
+}
+main #characters > div div p {
+  font-size: 18px;
+}
+main #characters > div img {
+  height: 100%;
+}
 
 footer .links-container {
   background-image: url("/img/footer-bg.jpg");

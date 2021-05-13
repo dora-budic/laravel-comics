@@ -24,3 +24,7 @@ Route::get('/single/{id}', function ($id) {
     $date = date_format($dateTime, "M d Y");
     return view('single')->with('comic',$comics[$id])->with('date',$date);
 })->name('details');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
