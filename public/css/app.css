@@ -325,6 +325,7 @@ main #comic-info .credits .credits-container {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 100px;
 }
 main #comic-info .credits .credits-container .credits-info {
   padding-bottom: 100px;
@@ -355,6 +356,16 @@ main #comic-info .credits .credits-container .credits-info > div.specs .writer a
   text-decoration: none;
   color: #0282F9;
   text-transform: uppercase;
+}
+main #comic-info .credits .credits-container .services ul li a {
+  text-decoration: none;
+  color: #9F9F9F;
+  display: flex;
+  text-transform: uppercase;
+}
+main #comic-info .credits .credits-container .services ul li a img {
+  height: 55px;
+  margin-right: 10px;
 }
 
 footer .links-container {

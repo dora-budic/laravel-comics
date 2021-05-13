@@ -28,6 +28,7 @@
         </div>
       </div>
     </div>
+
     <div class="credits border-t">
       <div class="credits-container">
         <div class="credits-info">
@@ -38,13 +39,13 @@
                 <p>Art by:</p>
               </div>
               <div>
-                @for($i = 0; $i < count($comic['artists']); $i++)
-                  @if ($i != count($comic['artists'])-1)
-                    <a href="#">{{$comic['artists'][$i]}}</a><span>, </span>
+                @foreach ($comic['artists'] as $index => $artist)
+                  @if (!($loop->last))
+                    <a href="#">{{$artist}}</a><span>, </span>
                   @else
-                    <a href="#">{{$comic['artists'][$i]}}</a>
+                    <a href="#">{{$artist}}</a>
                   @endif
-                @endfor
+                @endforeach
               </div>
             </div>
             <div class="writer border-b">
@@ -52,13 +53,13 @@
                 <p>Written by:</p>
               </div>
               <div>
-                @for($i = 0; $i < count($comic['writers']); $i++)
-                  @if ($i != count($comic['writers'])-1)
-                    <a href="#">{{$comic['writers'][$i]}}</a><span>, </span>
+                @foreach ($comic['writers'] as $index => $writer)
+                  @if (!($loop->last))
+                    <a href="#">{{$writer}}</a><span>, </span>
                   @else
-                    <a href="#">{{$comic['writers'][$i]}}</a>
+                    <a href="#">{{$writer}}</a>
                   @endif
-                @endfor
+                @endforeach
               </div>
             </div>
           </div>
@@ -89,6 +90,15 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="services">
+          <ul class="list-inline">
+            <li><a href="#">digital comics<img src="/img/buy-comics-digital-comics.png" alt="ebook"></a></li>
+            <li><a href="#">shop dc<img src="/img/buy-comics-merchandise.png" alt="tshirt"></a></li>
+            <li><a href="#">comic shop locator<img src="/img/buy-comics-shop-locator.png" alt="location icon"></a></li>
+            <li><a href="#">subscription<img src="/img/buy-comics-subscriptions.png" alt="cards"></a></li>
+          </ul>
         </div>
       </div>
     </div>
