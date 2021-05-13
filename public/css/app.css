@@ -255,10 +255,55 @@ main #comic-info .comic-details .cover a.cover-bottom {
 main #comic-info .comic-details .comic-description {
   padding: 50px 0;
   display: flex;
+  justify-content: space-between;
+}
+main #comic-info .comic-details .comic-description .text {
+  width: calc(100% / 3 * 2 - 25px);
 }
 main #comic-info .comic-details .comic-description .text h1 {
   color: #003F63;
   text-transform: uppercase;
+  font-size: 30px;
+}
+main #comic-info .comic-details .comic-description .text .price {
+  background-color: #55BA59;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #357739;
+  margin: 30px 0 20px;
+}
+main #comic-info .comic-details .comic-description .text .price p {
+  padding: 15px 25px;
+  font-weight: bold;
+  color: #bafd9c;
+}
+main #comic-info .comic-details .comic-description .text .price p span {
+  color: #fff;
+}
+main #comic-info .comic-details .comic-description .text .price div {
+  display: flex;
+  justify-content: space-between;
+}
+main #comic-info .comic-details .comic-description .text .price div a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 25px;
+  border-left: 1px solid #357739;
+  line-height: 50px;
+}
+main #comic-info .comic-details .comic-description .text .price div a i {
+  font-size: 12px;
+}
+main #comic-info .comic-details .comic-description .text p {
+  color: #555555;
+  font-size: 17px;
+  line-height: 23px;
+}
+main #comic-info .comic-details .comic-description .advertisement h4 {
+  text-transform: uppercase;
+  color: #555555;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 footer .links-container {
